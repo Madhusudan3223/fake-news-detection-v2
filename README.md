@@ -15,10 +15,10 @@ This project detects whether a news headline or article is **Real** or **Fake** 
 ---
 ## 🖼️ App Preview
 
-![Fake News Detection Screenshot](Screenshot (62).PNG)
+![Fake News Detection Screenshot] (Screenshot (62).PNG)
 
 
-![Fake News Detection Screenshot](Screenshot (63).PNG)
+![Fake News Detection Screenshot] (Screenshot (63).PNG)
 
 ## 🧠 Model Workflow
 
