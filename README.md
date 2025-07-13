@@ -1,64 +1,58 @@
-# 📰 Fake News Detection 
+# 📰 Fake News Detection App (v2)
 
-This project detects whether a news headline or article is **Real** or **Fake** using **Machine Learning (Logistic Regression)** and **TF-IDF vectorization**. It was built and trained on a labeled dataset of real and fake news articles.
-
----
-
-## 📁 Files
-
-- `app.ipynb` – Google Colab notebook with full pipeline
-- `True.csv` / `Fake.csv` – Datasets used for training
-- `tfidf_vectorizer_v2.pkl` – Saved vectorizer
-- `fake_news_model_v2.pkl` – Trained Logistic Regression model
-- `requirements.txt` – Python dependencies
-
----
-## 🖼️ App Preview
-
-![Real News Detection Screenshot](Screenshot_62.png)
-
-
-
-![Fake News Detection Screenshot](Screenshot_63.png)
-
-
-## 🧠 Model Workflow
-
-1. **Data Loading** – Combines and labels fake & real datasets
-2. **Text Preprocessing** – Lowercase, remove digits/punctuation, lemmatization
-3. **Vectorization** – TF-IDF on cleaned text
-4. **Model Training** – Logistic Regression with accuracy evaluation
-5. **Export** – Saves model & vectorizer for inference
+This is a machine learning-based web app that detects whether a news article or headline is **REAL** or **FAKE** using Natural Language Processing and a Logistic Regression model.
 
 ---
 
-## 🔍 Dataset Info
+## 📂 Dataset
 
-- **True.csv**: Verified real news articles
-- **Fake.csv**: Articles flagged as misinformation
-- Source: [Kaggle Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
+We used the **Fake and Real News Dataset** from Kaggle which contains:
+
+- ✅ `True.csv` – Real news
+- ❌ `Fake.csv` – Fake news
+
+Both datasets were labeled and merged, cleaned using NLP, and vectorized using `TfidfVectorizer`.
 
 ---
 
-## 📊 Model Performance
+## ⚙️ Model
 
-- **Accuracy:** ~95%
-- **Evaluation:** Confusion matrix, classification report
+- ✅ Preprocessing: stopword removal, lemmatization, punctuation cleanup
+- 🔠 Vectorizer: TF-IDF (`max_features=5000`)
+- 🤖 Classifier: Logistic Regression
+- 💾 Model saved using `joblib`
+
+---
+
+## 🧪 Accuracy
+
+Achieved an accuracy of around **90%+** on the test set.
+
+---
+
+## 💻 Web App (Built with Streamlit)
+
+Enter any news article or headline in the input box, and the app will predict whether it's **REAL** or **FAKE**.
+
+---
+
+## 🖼 Screenshots
+
+### ✅ Real News Prediction
+
+![Real News](Screenshot_62.png)
+
+### ❌ Fake News Prediction
+
+![Fake News](Screenshot_63.png)
 
 ---
 
 ## 🚀 How to Run
 
-You can run the full training pipeline on **Google Colab**:
-1. Upload `True.csv` and `Fake.csv`
-2. Follow each step in `app.ipynb`
-3. Download the `.pkl` files for deployment
-
----
-
-## 📦 Dependencies
-
-Install all dependencies using:
-
 ```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app.py
