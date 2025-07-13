@@ -43,9 +43,7 @@ Enter any news article or headline in the input box, and the app will predict wh
 ![Real News](Screenshot_62.png)
 
 ### ❌ Fake News Prediction
-
-![Fake News](Screenshot_63.png)
-
+Screenshot (62).PNG
 ---
 
 ## 🚀 How to Run
