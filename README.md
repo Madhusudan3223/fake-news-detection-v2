@@ -1,4 +1,4 @@
-# 📰 Fake News Detection v2
+# 📰 Fake News Detection 
 
 This project detects whether a news headline or article is **Real** or **Fake** using **Machine Learning (Logistic Regression)** and **TF-IDF vectorization**. It was built and trained on a labeled dataset of real and fake news articles.
 
