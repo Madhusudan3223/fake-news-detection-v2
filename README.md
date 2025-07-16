@@ -48,11 +48,4 @@ Enter any news article or headline in the input box, and the app will predict wh
 
 ---
 
-## 🚀 How to Run
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run app.py
