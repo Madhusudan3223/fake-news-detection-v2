@@ -44,7 +44,8 @@ Enter any news article or headline in the input box, and the app will predict wh
 
 
 ### ❌ Fake News Prediction
-Screenshot (62).PNG
+![Fake News Detection Output Screenshot](https://github.com/Madhusudan3223/fake-news-detection-v2/blob/main/Screenshot%20(63).PNG?raw=true)
+
 ---
 
 ## 🚀 How to Run
